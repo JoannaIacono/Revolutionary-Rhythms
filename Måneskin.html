@@ -69,5 +69,50 @@ Are you ready for it? <a href="https://melody-data.github.io/stories/published_s
           </div>
         </div>
       </div>
+      <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="https://scontent-fco2-1.xx.fbcdn.net/v/t39.30808-6/264420333_2049180108572945_477547093067946876_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=_ecLxzOwgKsAX_6ie2q&_nc_ht=scontent-fco2-1.xx&oh=00_AfCfhLVLJyJIKcHkJV1FKhv50pqitt7AnYT6P1RonXPg9g&oe=64A1AD88" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Joanna <span class="w3-opacity w3-medium">July 3, 2023, 2:30 PM</span></h4>
+                <p>Love your blog page! Simply the best!</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="https://scontent-fco2-1.xx.fbcdn.net/v/t39.30808-6/296485832_5384895314911441_7976664467076718858_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Wh9jCqYykU8AX_Bo-Ni&_nc_ht=scontent-fco2-1.xx&oh=00_AfCpeodLIMa_j4P8p1i1EJO2itjJXzahm8e7jTHppF3NzA&oe=64A0D518" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Matteo <span class="w3-opacity w3-medium">July 3, 2023, 2:40 PM</span></h4>
+                <p>Interesting!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
     </body>
     </html>
