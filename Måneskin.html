@@ -27,7 +27,17 @@ body {font-family: "Open Sans"}
         <div class="w3-center">
           <h1>MÅNESKIN</h1>
           <h5>A story written by <span class="w3-opacity">Marika and Fiorella Di Matteo</span></h5>
-        </div>
+          <br>
+         <h6><button class="w3-button w3-black w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('watchme').style.display='block'">WATCH ME!</button></h6>
+    
+    <div id="watchme" class="w3-modal w3-animate-opacity">
+  
+      <i onclick="document.getElementById('watchme').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xxlarge w3-right"></i>
+     
+       <iframe width="942" height="530" src="https://www.youtube.com/embed/RVH5dn1cxAQ" title="Måneskin - Zitti E Buoni - Italy 🇮🇹 - Grand Final - Eurovision 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    </div> 
+  
 
         <div class="w3-justify">
           <img src="https://www.redblue.it/wp-content/uploads/2021/11/Ma%CC%8Aneskin_in_2021.jpg" alt="MÅNESKIN" style="width:100%" class="w3-padding-16">
@@ -67,6 +77,17 @@ Are you ready for it? <a href="https://melody-data.github.io/stories/published_s
           </div>
         </div>
       </div>
+    
+    <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+    
       <!-- Footer -->
 <footer class="w3-container w3-dark-grey" style="padding:32px">
   <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
@@ -89,5 +110,5 @@ function likeFunction(x) {
   x.innerHTML = "✓ Liked";
 }
 </script>
-    </body>
+  </body>
     </html>
